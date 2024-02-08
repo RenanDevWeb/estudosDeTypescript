@@ -1,6 +1,14 @@
 // Day 5 - Exercise 1
 
-function addToCart(item: {id: number, title: string, variantId: number}) {
+interface CartItem {
+  id: number,
+  title: string,
+  variantID?: number
+}
+
+
+
+function addToCart(item: CartItem) {
     console.log(`Adding "${item.title}" to cart.`);
   }
 

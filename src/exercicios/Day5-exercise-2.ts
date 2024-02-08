@@ -1,6 +1,11 @@
 // Day 5 - Exercise 2
 
-class Person {
+interface IPerson {
+   name: string,
+   age: number
+}
+
+class Person implements IPerson{
     constructor(public name: string, public age: number) {}
   }
 

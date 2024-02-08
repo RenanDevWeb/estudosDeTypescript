@@ -1,12 +1,12 @@
 // Day 5 - Exercise 4
 
-class Employee {
-    title: string;
-    salary: number;
-    constructor(title: string, salary: number) {
-      this.title = title;
-      this.salary = salary;
-    }
+interface iEmployee {
+  title: string,
+  salary: number
+}
+
+class Employee  implements iEmployee{
+    constructor(public title: string, public salary: number) { }
   }
 
   const employee = new Employee('Engineer', 100000);
